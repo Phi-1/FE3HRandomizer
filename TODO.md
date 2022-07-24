@@ -1,3 +1,4 @@
 - generate hints for:
     - class skill requirements
     - unit recruitment requirements
+- also probably refactor choose_classes dancer picking code (idk im tired but pretty sure its nasty as hell)
