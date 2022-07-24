@@ -1,0 +1,3 @@
+- generate hints for:
+    - class skill requirements
+    - unit recruitment requirements

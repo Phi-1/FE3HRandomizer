@@ -85,7 +85,7 @@ def save_run(route: str, characters_classes: list, folder: str) -> None:
     with open(f"{folder}/{str(uuid4())}.txt", "w") as file:
         lines = []
         route_name = route.replace("_", " ")
-        lines.append(f"Route: {route_name}\n")
+        lines.append(f"Route: {route_name}\n\n")
         for character, class_name in characters_classes:
             class_name = class_name.replace("_", " ")
             lines.append(f"{character}: {class_name}\n")
