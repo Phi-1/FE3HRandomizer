@@ -1,301 +1,337 @@
 {
     "routes": {
-        "Verdant_Wind": "Claude", 
-        "Azure_Moon": "Dimitri", 
-        "Crimson_Flower": "Edelgard", 
-        "Silver_Snow": ""
+        "Verdant Wind": "Claude", 
+        "Azure Moon": "Dimitri", 
+        "Crimson Flower": "Edelgard", 
+        "Silver Snow": ""
     },
     "characters": [
         {
             "name": "Hubert",
-            "unique_to": ["Crimson_Flower"]
+            "unique to": ["Crimson Flower"]
         },
         {
             "name": "Ferdinand",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Linhardt",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Caspar",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Bernadetta",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Dorothea",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Petra",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Dedue",
-            "unique_to": ["Azure_Moon"]
+            "unique to": ["Azure Moon"]
         },
         {
             "name": "Felix",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Ashe",
-            "unique_to": ["Azure_Moon", "Crimson_Flower"]
+            "unique to": ["Azure Moon", "Crimson Flower"]
         },
         {
             "name": "Sylvain",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Mercedes",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Annette",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Ingrid",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Lorenz",
-            "unique_to": ["Verdant_Wind", "Crimson_Flower"]
+            "unique to": ["Verdant Wind", "Crimson Flower"]
         },
         {
             "name": "Raphael",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Ignatz",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Lysithea",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Marianne",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Hilda",
-            "unique_to": ["Verdant_Wind", "Azure_Moon", "Silver_Snow"]
+            "unique to": ["Verdant Wind", "Azure Moon", "Silver Snow"]
         },
         {
             "name": "Leonie",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Seteth",
-            "unique_to": ["Silver_Snow", "Azure_Moon", "Verdant_Wind"]
+            "unique to": ["Silver Snow", "Azure Moon", "Verdant Wind"]
         },
         {
             "name": "Flayn",
-            "unique_to": ["Silver_Snow", "Azure_Moon", "Verdant_Wind"]
+            "unique to": ["Silver Snow", "Azure Moon", "Verdant Wind"]
         },
         {
             "name": "Hanneman",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Manuela",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Gilbert",
-            "unique_to": ["Azure_Moon"]
+            "unique to": ["Azure Moon"]
         },
         {
             "name": "Catherine",
-            "unique_to": ["Silver_Snow", "Azure_Moon", "Verdant_Wind"]
+            "unique to": ["Silver Snow", "Azure Moon", "Verdant Wind"]
         },
         {
             "name": "Shamir",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Cyril",
-            "unique_to": ["Silver_Snow", "Azure_Moon", "Verdant_Wind"]
+            "unique to": ["Silver Snow", "Azure Moon", "Verdant Wind"]
         },
         {
             "name": "Jeritza",
-            "unique_to": ["Crimson_Flower"]
+            "unique to": ["Crimson Flower"]
         },
         {
             "name": "Anna",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Yuri",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Constance",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Balthus",
-            "unique_to": []
+            "unique to": []
         },
         {
             "name": "Hapi",
-            "unique_to": []
+            "unique to": []
         }
     ],
     "classes": [
         {
+            "name": "Enlightened One",
+            "requirements": {},
+            "unique to": ["FByleth", "MByleth"],
+            "incompatible": []
+        },
+        {
             "name": "Dancer",
-            "unique_to": [],
+            "requirements": {},
+            "unique to": [],
             "incompatible": ["Seteth", "Catherine", "Shamir", "Hanneman", "Manuela", "Gilbert", "Alois", "Cyril", "Jeritza", "Anna"]
         },
         {
-            "name": "Great_Lord",
-            "unique_to": ["Dimitri"],
+            "name": "Great Lord",
+            "requirements": {},
+            "unique to": ["Dimitri"],
             "incompatible": []
         },
         {
             "name": "Barbarossa",
-            "unique_to": ["Claude"],
+            "requirements": {},
+            "unique to": ["Claude"],
             "incompatible": []
         },
         {
             "name": "Emperor",
-            "unique_to": ["Edelgard"],
+            "requirements": {},
+            "unique to": ["Edelgard"],
             "incompatible": []
         },
         {
             "name": "Swordmaster",
-            "unique_to": [],
+            "requirements": {"Sword": "A"},
+            "unique to": [],
             "incompatible": []
         },
         {
             "name": "Hero",
-            "unique_to": [],
+            "requirements": {"Sword": "B", "Axe": "C"},
+            "unique to": [],
             "incompatible": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"]
         },
         {
             "name": "Assassin",
-            "unique_to": [],
+            "requirements": {"Sword": "B", "Bow": "C"},
+            "unique to": [],
             "incompatible": []
         },
         {
             "name": "Paladin",
-            "unique_to": [],
+            "requirements": {"Lance": "B", "Riding": "B"},
+            "unique to": [],
             "incompatible": []
         },
         {
             "name": "Warrior",
-            "unique_to": [],
+            "requirements": {"Axe": "A"},
+            "unique to": [],
             "incompatible": []
         },
         {
-            "name": "Fortress_Knight",
-            "unique_to": [],
+            "name": "Fortress Knight",
+            "requirements": {"Axe": "B", "Heavy Armor": "B"},
+            "unique to": [],
             "incompatible": []
         },
         {
-            "name": "Wyvern_Rider",
-            "unique_to": [],
+            "name": "Wyvern Rider",
+            "requirements": {"Axe": "B", "Flying": "C"},
+            "unique to": [],
             "incompatible": []
         },
         {
             "name": "Sniper",
-            "unique_to": [],
+            "requirements": {"Bow": "A"},
+            "unique to": [],
             "incompatible": []
         },
         {
             "name": "Grappler",
-            "unique_to": [],
+            "requirements": {"Brawl": "A"},
+            "unique to": [],
             "incompatible": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"]
         },
         {
             "name": "Warlock",
-            "unique_to": [],
+            "requirements": {"Reason": "A"},
+            "unique to": [],
             "incompatible": []
         },
         {
-            "name": "Dark_Bishop",
-            "unique_to": [],
+            "name": "Dark Bishop",
+            "requirements": {"Reason": "A", "Qualification": "Dark Mage"},
+            "unique to": [],
             "incompatible": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"]
         },
         {
             "name": "Bishop",
-            "unique_to": [],
+            "requirements": {"Faith": "A"},
+            "unique to": [],
             "incompatible": []
         },
         {
             "name": "Trickster",
-            "unique_to": [],
+            "requirements": {"Sword": "B", "Qualification": "Thief"},
+            "unique to": [],
             "incompatible": []
         },
         {
-            "name": "War_Monk",
-            "unique_to": [],
+            "name": "War Monk",
+            "requirements": {"Brawl": "B+", "Faith": "C+"},
+            "unique to": [],
             "incompatible": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"]
         },
         {
-            "name": "War_Cleric",
-            "unique_to": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"],
+            "name": "War Cleric",
+            "requirements": {"Brawl": "B+", "Faith": "C+"},
+            "unique to": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"],
             "incompatible": []
         },
         {
-            "name": "Dark_Flier",
-            "unique_to": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"],
+            "name": "Dark Flier",
+            "requirements": {"Reason": "B+", "Flying": "C"},
+            "unique to": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"],
             "incompatible": []
         },
         {
             "name": "Valkyrie",
-            "unique_to": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"],
+            "requirements": {"Reason": "B", "Riding": "B"},
+            "unique to": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"],
             "incompatible": []
         },
         {
-            "name": "Falcon_Knight",
-            "unique_to": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"],
+            "name": "Falcon Knight",
+            "requirements": {"Sword": "C", "Lance": "A", "Flying": "B+"},
+            "unique to": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"],
             "incompatible": []
         },
         {
-            "name": "Wyvern_Lord",
-            "unique_to": [],
+            "name": "Wyvern Lord",
+            "requirements": {"Lance": "C", "Axe": "A", "Flying": "A"},
+            "unique to": [],
             "incompatible": []
         },
         {
-            "name": "Mortal_Savant",
-            "unique_to": [],
+            "name": "Mortal Savant",
+            "requirements": {"Sword": "A", "Reason": "B+"},
+            "unique to": [],
             "incompatible": []
         },
         {
-            "name": "Great_Knight",
-            "unique_to": [],
+            "name": "Great Knight",
+            "requirements": {"Axe": "B+", "Heavy Armor": "A", "Riding": "B+"},
+            "unique to": [],
             "incompatible": []
         },
         {
-            "name": "Bow_Knight",
-            "unique_to": [],
+            "name": "Bow Knight",
+            "requirements": {"Lance": "C", "Bow": "A", "Riding": "A"},
+            "unique to": [],
             "incompatible": []
         },
         {
-            "name": "Dark_Knight",
-            "unique_to": [],
+            "name": "Dark Knight",
+            "requirements": {"Lance": "C", "Reason": "B+", "Riding": "A"},
+            "unique to": [],
             "incompatible": []
         },
         {
-            "name": "Holy_Knight",
-            "unique_to": [],
+            "name": "Holy Knight",
+            "requirements": {"Lance": "C", "Faith": "B+", "Riding": "A"},
+            "unique to": [],
             "incompatible": []
         },
         {
-            "name": "War_Master",
-            "unique_to": [],
+            "name": "War Master",
+            "requirements": {"Axe": "A", "Brawl": "A"},
+            "unique to": [],
             "incompatible": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"]
         },
         {
             "name": "Gremory",
-            "unique_to": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"],
+            "requirements": {"Reason": "A", "Faith": "A"},
+            "unique to": ["FByleth", "Anna", "Flayn", "Manuela", "Catherine", "Shamir", "Leonie", "Hilda", "Marianne", "Lysithea", "Ingrid", "Annette", "Mercedes", "Petra", "Dorothea", "Bernadetta", "Edelgard"],
             "incompatible": []
         }
     ]

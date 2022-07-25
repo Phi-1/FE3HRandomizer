@@ -46,7 +46,7 @@ def choose_characters(n_characters: int, character_options: dict, route: str) ->
             character_name = random.choice(list(character_options.keys()))
             if character_name in character_names:
                 continue
-            if len(character_options[character_name]["unique_to"]) > 0 and route not in character_options[character_name]["unique_to"]:
+            if len(character_options[character_name]["unique to"]) > 0 and route not in character_options[character_name]["unique to"]:
                 continue
             character_names.append(character_name)
             successful_pick = True
@@ -59,7 +59,7 @@ def choose_classes(character_names: list, class_options: dict, guarantee_dancer:
         picked_dancer = False
         while not picked_dancer:
             character_pick = random.choice(character_names)
-            if len(class_options["Dancer"]["unique_to"]) > 0 and character_pick not in class_options["Dancer"]["unique_to"]:
+            if len(class_options["Dancer"]["unique to"]) > 0 and character_pick not in class_options["Dancer"]["unique to"]:
                 continue
             dancer = character_pick
             characters_classes.append((character_pick, "Dancer"))
@@ -70,7 +70,7 @@ def choose_classes(character_names: list, class_options: dict, guarantee_dancer:
         class_picked = False
         while not class_picked:
             class_pick = random.choice(list(class_options.keys()))
-            if len(class_options[class_pick]["unique_to"]) > 0 and character not in class_options[class_pick]["unique_to"]:
+            if len(class_options[class_pick]["unique to"]) > 0 and character not in class_options[class_pick]["unique to"]:
                 continue
             if class_pick == "Dancer":
                 if dancer == "":
@@ -81,14 +81,19 @@ def choose_classes(character_names: list, class_options: dict, guarantee_dancer:
             class_picked = True
     return characters_classes
 
-def save_run(route: str, characters_classes: list, folder: str) -> None:
+def save_run(folder: str, route: str, characters_classes: list, classes: dict) -> None:
     with open(f"{folder}/{str(uuid4())}.txt", "w") as file:
         lines = []
-        route_name = route.replace("_", " ")
-        lines.append(f"Route: {route_name}\n\n")
+        lines.append(f"Route: {route}\n\n")
         for character, class_name in characters_classes:
-            class_name = class_name.replace("_", " ")
             lines.append(f"{character}: {class_name}\n")
+            if len(classes[class_name]["requirements"]) > 0:
+                lines.append("Skill Requirements: \n")
+                for skill, level in classes[class_name]["requirements"].items():
+                    lines.append(f"\t{skill}: {level}\n")
+                lines.append("\n")
+            else:
+                lines.append("\n")
         file.writelines(lines)
 
 
@@ -101,7 +106,7 @@ def main():
     route, leader = choose_route(options["routes"])
     character_names = [protagonist, leader] + choose_characters(n_characters - 2, options["characters"], route)
     characters_classes = choose_classes(character_names, options["classes"], guarantee_dancer)
-    save_run(route, characters_classes, "generated")
+    save_run("generated", route, characters_classes, options["classes"])
 
 if __name__ == "__main__":
     main()
